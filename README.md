@@ -1,16 +1,126 @@
-# React + Vite
+# Dragon Ball Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Dragon Ball Explorer Banner](https://via.placeholder.com/1200x300.png?text=Dragon+Ball+Explorer)
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Dragon Ball Explorer** es una aplicación web desarrollada en **React** que permite explorar los personajes del universo Dragon Ball de manera sencilla y visual. La aplicación consume la **API pública de Dragon Ball** para obtener información actualizada de los personajes y sus características principales, como nombre, raza y afiliación.
 
-## React Compiler
+La aplicación incluye dos páginas principales:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Home (`/`)**: Muestra un listado de personajes con sus imágenes y detalles importantes.
+- **Entities (`/entities`)**: Lista de entidades mostrando 3 propiedades de cada personaje para facilitar la consulta rápida.
 
-## Expanding the ESLint configuration
+El proyecto está pensado para ser **responsive**, asegurando que las tarjetas de personajes se adapten a distintos tamaños de pantalla sin deformar las imágenes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tecnologías usadas
+
+- **React 19.1.1**: Framework de JavaScript para construir la interfaz de usuario.
+- **React Router DOM 7.9.5**: Manejo de rutas dentro de la aplicación.
+- **Axios 1.13.2**: Para realizar solicitudes HTTP a la API de Dragon Ball.
+- **Bootstrap 5.3.8**: Framework CSS para diseño responsivo y componentes visuales.
+- **HTML5 & CSS3**: Estructura y estilo de la aplicación.
+
+**Dependencias del proyecto:**
+```json
+"dependencies": {
+  "axios": "^1.13.2",
+  "bootstrap": "^5.3.8",
+  "react": "^19.1.1",
+  "react-dom": "^19.1.1",
+  "react-router-dom": "^7.9.5"
+}
+```
+
+---
+
+## Estructura del proyecto
+```
+dragonball-react/
+│
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Footer.jsx
+│   │   ├── home/
+│   │   │   ├── HeroSection.jsx
+│   │   │   └── CharacterList.jsx
+│   │   └── entities/
+│   │       └── EntityList.jsx
+│   │
+│   ├── pages/
+│   │   ├── HomePage.jsx
+│   │   └── EntitiesPage.jsx
+│   │
+│   ├── services/
+│   │   └── api.js
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── public/
+├── package.json
+└── README.md
+```
+
+---
+
+## Pasos para ejecutar el servidor
+
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/Josue-Zapata-v/dragonball-react.git
+cd dragonball-react
+```
+
+2. Instalar dependencias:
+```bash
+npm install
+```
+
+3. Ejecutar la aplicación en modo desarrollo:
+```bash
+npm run dev
+```
+
+4. Abrir la aplicación en el navegador:
+```
+http://localhost:5173/
+```
+
+---
+
+## Funcionalidades implementadas
+
+* Listado de personajes con tarjetas (`Card`) con imagen, nombre, raza y afiliación.
+* Tarjetas totalmente **responsive** y adaptables a cualquier tamaño de pantalla.
+* Páginas con rutas definidas usando **React Router DOM**.
+* Consumo de datos en tiempo real desde la **Dragon Ball API** mediante **Axios**.
+* Componente de encabezado `HeroSection` para la presentación principal.
+* Página de entidades (`/entities`) mostrando 3 propiedades de cada personaje.
+* Diseño limpio usando **Bootstrap**, con separación y sombra en tarjetas para mejor visualización.
+* Manejo de errores en las llamadas a la API (se muestra lista vacía si falla la solicitud).
+
+---
+
+## Enlaces
+
+* Repositorio GitHub: [https://github.com/Josue-Zapata-v/dragonball-react.git](https://github.com/Josue-Zapata-v/dragonball-react.git)
+* Deploy de la aplicación: [https://dragonball-explorer.vercel.app](https://dragonball-explorer.vercel.app)
+* Video demostrativo: [https://youtu.be/inventameelvideo](https://youtu.be/inventameelvideo)
+
+---
+
+## Créditos
+
+Desarrollado por **Josue Isai Zapata Villegas** como proyecto personal de práctica en React, integración de APIs y diseño responsive.
+
+---
+
+## Notas
+
+* La aplicación consume la **Dragon Ball API pública**, por lo que requiere conexión a Internet para cargar los personajes y sus imágenes.
+* Se recomienda utilizar la última versión de un navegador moderno (Chrome, Firefox, Edge) para visualizar correctamente las tarjetas y estilos.
