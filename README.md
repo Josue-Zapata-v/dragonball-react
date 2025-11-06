@@ -1,6 +1,5 @@
 # Dragon Ball Explorer
 
-![Dragon Ball Explorer Banner](https://via.placeholder.com/1200x300.png?text=Dragon+Ball+Explorer)
 
 ## Descripción
 
@@ -109,8 +108,8 @@ http://localhost:5173/
 ## Enlaces
 
 * Repositorio GitHub: [https://github.com/Josue-Zapata-v/dragonball-react.git](https://github.com/Josue-Zapata-v/dragonball-react.git)
-* Deploy de la aplicación: [https://dragonball-explorer.vercel.app](https://dragonball-explorer.vercel.app)
-* Video demostrativo: [https://youtu.be/inventameelvideo](https://youtu.be/inventameelvideo)
+* Deploy de la aplicación: [https://earnest-kringle-2acf1d.netlify.app/](https://earnest-kringle-2acf1d.netlify.app/)
+* Video demostrativo: [https://youtu.be/U2vPkznQcYo](https://youtu.be/U2vPkznQcYo)
 
 ---
 
