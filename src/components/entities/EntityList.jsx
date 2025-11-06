@@ -12,10 +12,10 @@ const EntityList = () => {
     <div className="row">
       {characters.map(char => (
         <div key={char.id} className="col-md-4 mb-3">
-          <div className="card p-3">
+          <div className="card p-3 h-100">
             <h5>{char.name}</h5>
-            <p>Race: {char.race}</p>
-            <p>Origin: {char.origin}</p>
+            <p><strong>Race:</strong> {char.race}</p>
+            <p><strong>Affiliation:</strong> {char.affiliation}</p> {/* reemplaza origin */}
           </div>
         </div>
       ))}
